@@ -1,6 +1,6 @@
 
 const mongoose = require('mongoose');
-const MONGODB_URI= "mongodb://127.0.0.1/Todos" // You can set your MongoDB URI in the environment variable
+const MONGODB_URI= "mongodb://127.0.0.1/TodoCollection" // You can set your MongoDB URI in the environment variable
 
 
 mongoose.connect(MONGODB_URI).then(

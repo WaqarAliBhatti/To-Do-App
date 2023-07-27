@@ -9,7 +9,8 @@ exports.todos = catchAsync(async (req, res, next) => {
   
 exports.addTodos= catchAsync(async(req,res,next)=>{
     const payload ={
-      task:req.body.task
+      task:req.body.task,
+      completed:req.body.completed
     };
     res.body=await service.createTodo(payload);
     return res.json(res.body)

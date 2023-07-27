@@ -9,7 +9,8 @@ exports.viewTodo = async () => {
   exports.createTodo= async (payload)=>{
     let task;
     const createPayload={
-      task:payload.task
+      task:payload.task,
+      complete:payload.complete
     };
     todo= await todoRepo.create(createPayload);
     console.log(todo);
